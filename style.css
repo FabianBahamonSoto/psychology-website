@@ -1,0 +1,33 @@
+body
+{
+    background: #e4f2f6;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: justify;
+}
+/*Estilos*/
+.estilos
+{
+    font-family: Felix Titling;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px white;
+}
+.carousel img
+{
+    width: 500px;
+}
+.fondo
+{
+    background: #fff5bd;
+    font-family: Felix Titling;
+    font-weight: bold;
+    color: #474747;
+    text-shadow: 1px 1px 5px #c9e1ec;
+}
+#textCuerpo
+{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 2.5%;
+    text-align: justify;
+}

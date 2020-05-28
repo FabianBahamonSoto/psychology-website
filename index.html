@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicología</title>
+    <link rel="stylesheet" href="./style.css">
+    <!--JQuery-->
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous">
+    </script>
+     <!--Materialize-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+
+    <!--Materialize icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--NAV-->
+    <nav class="nav-extended" style="background: #c9e1ec;">
+        <div class="container center" style="background: #c9e1ec;">
+            <div class="nav-wrapper" style="background: #c9e1ec;">
+                <a href="#" class="brand-logo estilos" style="text-shadow: 1px 1px 3px black; color: #474747; font-size: 30px; margin-top: 2%;">Psicología</a>
+                <a href="#" data-target="myMenu" class="sidenav-trigger" style="color: #191919;">
+                <i class="material-icons">menu</i>
+                </a>
+            </div>
+            <div class="nav-content">
+                <div class="tabs tabs-transparent">
+                    <ul class="estilos hide-on-med-and-down">
+                        <li class="tab"><a href="./depresion.html" onclick="" style="color: #474747;">Depresión</a></li>
+                        <li class="tab"><a href="#" style="color: #474747;">Ansiedad</a></li>
+                        <li class="tab"><a href="#" style="color: #474747;">Demencia</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Collapse-->
+    <ul class="sidenav center" id="myMenu">
+        <li><img src="./Contenido/psicologiaLogo.jpg" width="300"></li>
+        <li class="tab"><a href="#" style="color: #474747;" onclick="call(1)">Depresión</a></li>
+        <li class="tab"><a href="#" style="color: #474747;" onclick="call(2)">Ansiedad</a></li>
+        <li class="tab"><a href="#" style="color: #474747;" onclick="call(3)">Demencia</a></li>
+    </ul>
+    <!--Carousel-->
+    <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="./Contenido/psicologia1.jpg" height="300"></a>
+        <a class="carousel-item" href="#two!"><img src="./Contenido/psicologia2.jpg" height="300"></a>
+        <a class="carousel-item" href="#three!"><img src="./Contenido/psicologia3.jpg"  height="300"></a>
+        <a class="carousel-item" href="#four!"><img src="./Contenido/psicologia4.jpg" height="300"></a>
+        <a class="carousel-item" href="#five!"><img src="./Contenido/psicologia5.jpg" height="300"></a>
+    </div>
+    <!--Contenido-->
+    <div class="flow-text" style="font-family: 'Times New Roman', Times, serif; margin: 5%;">
+        <p>
+            "La psicología es la disciplina que investiga sobre los procesos mentales de personas y animales. La palabra proviene del griego: psico- (actividad mental o alma) y -logía (estudio). Esta disciplina analiza las tres dimensiones de los mencionados procesos: cognitiva, afectiva y conductual.
+            <br> <br>
+            La psicología moderna se ha encargado de recopilar hechos sobre las conductas y las experiencias de los seres vivos, organizándolos en forma sistemática y elaborando teorías para su comprensión. Estos estudios permiten explicar su comportamiento y hasta en algunos casos, predecir sus acciones futuras.
+            <br> <br>
+            A aquellas personas que desarrollan el estudio de la psicología se las denomina psicólogos. Esto significa, aquellos que analizan el comportamiento de los seres vivos desde un enfoque científico. Sigmund Freud, Carl Jung y Jean Piaget son considerados como algunos de los psicólogos pioneros.
+            <br> <br>
+            La metodología de estudio de la psicología se divide en dos grandes ramas: aquella que entiende esta disciplina como una ciencia básica (también denominada experimental) y emplea una metodología científica-cuantitativa (contrasta hipótesis con variables que pueden cuantificarse en el marco de un entorno de experimentación), y otra que busca comprender el fenómeno psicológico mediante metodologías cualitativas que enriquezcan la descripción y ayuden a comprender los procesos." <em>(Definición de.: Definicion de Psicología. URL(https://definicion.de/psicologia/))</em>
+            <br>
+        </p>
+    </div>
+    <!--Formulario-->
+    <div class="section container"> 
+        <div class="row">
+            <form class="col s12">
+                <div class="row card-panel">
+                    <div class="input-field col s6">
+                        <input type="text" id="nombre" class="validate" required>
+                        <label for="nombre">Nombre y Apellido:</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input type="text" id="telefono" class="validate" required>
+                        <label for="nombre">Telefono:</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input type="text" id="Email:" class="validate" required>
+                        <label for="nombre">Correo electronico:</label>
+                    </div>
+                    <button class="btn" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="page-footer center" style="background: #31639c;">
+        <div class="container">
+            <img src="./Contenido/redes.png" width="250" alt="">
+            <p class="grey-text text-lighten-4">Diseñado por Fabián Bahamón Soto</p>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2020 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Collapse-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+        });
+    </script>
+    <!--Materialize-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--JavaScript-->
+    <script src="./script.js"></script>
+</body>
+</html>
